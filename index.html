@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Command Line, CLI" />
+    <meta name="author" content="Bahrul Rozak" />
+    <title>Petualangan CLI</title>
+    <link rel="stylesheet" href="library/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/stylesheet.css">
+</head>
+
+<body>
+    <!-- Container Menu -->
+    <div class="container-menu">
+        <h2>Mulai Petualangan</h2>
+        <nav class="container-items">
+            <ul class="list-items">
+                <li><a href="#endpoints--apa-itu-cli">Apa itu CLI?</a></li>
+                <li><a href="#endpoints--buat-file">Membuat File</a></li>
+                <li><a href="#endpoints--buat-direktori">Membuat Direktori</a></li>
+                <li><a href="#endpoints--direktori-induk">Direktori Induk</a></li>
+                <li><a href="#endpoints--ubah-nama">Mengubah Nama FIle dan Direktori</a></li>
+                <li><a href="#endpoints--hapus">Menghapus File dan Direktori</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Container Menu END -->
+    <!-- Main -->
+    <main id="main">
+        <div class="button-menu" id="button-menu">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <!-- Apa itu CLI -->
+        <section class="section" id="endpoints--apa-itu-cli">
+            <h1>Apa itu CLI?</h1>
+            <img src="images/image-1.png" alt="" class="responsive">
+            <p> Selamat datang di Petualangan Command Line, sebelum kita mulai bertualang ada beberapa hal yang harus kita ketahui terlebih dahulu agar Petualangan kita menjadi lebih seru dan menarik Command Line atau biasa orang-orang menyebutnya sebagai
+                CLI (Command Line Interface) adalah sebuah tools untuk melakukan interaksi dan digunakan untuk mengetik perintah teks. Sekarang penggunaan CLI terhadap komputer memang sudah jarang kita temukan. Hal ini karena para pengguna lebih berminat
+                menggunakan GUI atau Graphic User Interface sebagai perantara antara pengguna dengan komputer. Mereka berpendapat bahwa GUI lebih mudah digunakan karena menyediakan tampilan grafis. Dengan begitu, para pengguna lebih mudah di dalam mengoperasikan
+                komputer. Berbeda dengan CLI yang hanya memiliki antarmuka berupa teks dengan background gelap. Bagi orang yang baru pertama kali melihatnya tentu saja akan langsung malas ketika harus menggunakan CLI. Meskipun sekarang penggunaan GUI
+                lebih banyak, namun bukan berarti CLI sudah tidak dibutuhkan. Para pengguna komputer yang sudah ahli sering menggunakan CLI untuk memberikan perintah kepada komputer. Misalnya pada saat ingin mengelola maupun mengurus server, administrasi,
+                hosting web, keamanan, dan lain-lain. Bahkan CLI menjadi sistem andalan bagi para peretas atau hacker. Anda pun pasti pernah melihat film yang memperlihatkan adegan pembobolan server di mana tampilan di komputer hanya berupa teks dan itulah
+                tampilan CLI.
+            </p>
+        </section>
+        <!-- Apa itu CLI End -->
+        <!-- Membuat File -->
+        <section class="section" id="endpoints--buat-file">
+            <h1>Membuat File</h1>
+            <img src="images/image-2.png" alt="" class="responsive">
+            <p>Langkah pertama Petualangan kita dimulai dari membuat file tapi sebelum itu kita harus melewati sebuah lembah GUI dan di ujung lembah sanalah kita akan menemukan pedesaan bernama Terminal dan selamat datang di Desa Terminal dan ucapkan selamat
+                tinggal kepada lembah GUI. Mari kita telusuri ada hal menarik apa saja di desa Terminal ini tapi sebelum menelusuri lebih jauh lagi mari kita lihat penampakan desa ini dari luar gerbang pedesaan dengan klik kanan kemudian open in terminal
+                atau melalui show application kemudian cari terminal.
+            </p>
+            <img src="images/image-3.png" alt="" class="responsive">
+            <p>
+                Seperti itulah penampakan desa Terminal. Kemudian mari kita jelajah kembali ada apa aja sih di desa ini, sepertinya kita menemukan hal menarik yaitu membuat file. untuk membuat File maka kita dapat menggunakan perintah <span>touch namafile</span>                dan akan menjadi sebuah file baru yang masih kosong yang terletak pada Home seperti ini
+            </p>
+            <img src="images/image-4.png" alt="" class="responsive">
+            <p>
+                kemudian bukan hanya buat file saja di desa Terminal ini kita juga dapat melihat isi dari file tersebut tapi sebelum itu kita edit terlebih dahulu filenya karena masih kosong hehe atau bisa juga pakai file lain yang sudah ada datanya dan langsung saja
+                untuk menampilkan file gunakan perintah <span>cat namafile</span>
+            </p>
+            <img src="images/image-5.png" alt="" class="responsive">
+            <p>
+                Hingga saat ini kita telah berhasil membuat dan menampilkan file masih banyak lagi hal yang belum kita jelajahi di desa Terminal ini, lets go mari kita menjelajah lagi!!
+            </p>
+        </section>
+        <!-- Membuat file END -->
+        <!-- Membuat Direktori -->
+        <section class="section" id="endpoints--buat-direktori">
+            <h1>Membuat Direktori</h1>
+            <p>Wah ada hal menarik lagi! ternyata kita juga dapat membuat direktori, tapi sebelum itu apa sih direktori itu? menurut wikipedia Sebuah direktori adalah komponen dari sistem berkas yang mengandung satu berkas atau lebih atau satu direktori
+                lainnya atau lebih, yang disebut dengan subdirektori. Dalam banyak komputer, direktori dikenal sebagai folder, atau drawer,[1] Batasan jumlah berkas atau subdirektori yang dapat ditampung dalam sebuah direktori tergantung dari sistem berkas
+                yang digunakan, meskipun sebagian sistem berkas tidak membatasinya (batasan tersebut disebabkan ukuran media penyimpanan di mana direktori berada). Sebuah direktori yang mengandung satu direktori atau lebih disebut sebagai parent directory
+                dari direktori-direktori tersebut, dan setiap direktori yang dikandung di dalam direktori disebut sebagai child directory. Struktur direktori seperti ini lazim disebut sebagai struktur hierarkis direktori, atau sering juga disebut sebagai
+                pohon direktori. Bingung? wkwk tenang saya pun bingung juga, tapi simplenya gini direktori itu adalah folder untuk penyimpanan file. untuk membuat direktori gunakan perintah <span>mkdir namaDirektori</span>
+            </p>
+            <p>Catatan: Buat direktori baru di desktop agar mudah di temukan
+            </p>
+            <img src="images/image-6.png" alt="#" class="responsive">
+            <p>Sekarang kita buat file baru dengan perintah yang sudah kita pelajari sebelumnya yakni <span>touch namaFile</span> Tapi sebelum itu, mungkin kita akan bertanya-tanya, <i>"Kalau kita tambah di sini maka file baru akan berada di desktop 
+              dong bukan di folder frontend tersebut?" </i> Betul! untuk mengatasi hal tersebut kita dapat gunakan perintah <span>cd</span> untuk berpindah direktori tapi ada satu lagi yang saya lupa bahas yakni bagaimana kita mau berpindah direktori
+                tapi kita tidak tahu daftar file dan direktori apa saja yang ada di desktop ini, untuk mengatasi hal tersebut perkenalkan <span>ls</span> ls adalah sebuah perintah untuk menampilkan konten dari direktori
+            </p>
+            <img src="images/image-7.png" alt="#" class="responsive">
+            <p>Nah lebih mudah kan? Kita dapat melihat daftar folder atau file apa saja pada desktop, oke langsung saja kita berpindah ke direktori frontend dengan cara <span>cd frontend</span>
+            </p>
+            <img src="images/image-8.png" alt="#" class="responsive">
+            <p>setelah itu untuk memastikan bahwa kita berada pada direktori frontend tersebut di desa Terminal ini ada sebuah fitur yang dapat membantu kita yaitu <span>pwd</span> pwd adalah singkatan dari Print working direktori yang berfungsi untuk mengetahui
+                di mana saat ini kita berada
+            </p>
+            <img src="images/image-9.png" alt="#" class="responsive">
+            <p>nah saat ini Anda berada di direktori frontend, langsung saja tambahkan file baru <span>touch index.html</span> dan gunakan perintah <span>ls</span> untuk memastikan kembali apakah file tersebut sudah di tambahkan ke direktori tersebut</p>
+            <img src="images/image-10.png" alt="#" class="responsive">
+            <p>Sampai di sini kita telah berhasil membuat direktori, berpindah direktori, melihat daftar file dalam direktori tapi perjalanan Petualangan belum lah berakhir, masih banyak lagi yang belum kita jelajahi di desa Terminal ini. lets go!!
+            </p>
+        </section>
+
+        <!-- Membuat DIrektori END -->
+        <!-- Direktori Induk -->
+        <section class="section" id="endpoints--direktori-induk">
+            <h1>Direktori Induk</h1>
+            <p>Setelah kita belajar bagaimana berpindah directory kini saatnya kita mempelajari bagaimana berpindah ke direktori induk, tapi agar lebih mudah memahami mari kita buat sebuah struktur direktori seperti ini
+            </p>
+            <img src="images/image-11.png" alt="#" class="responsive">
+            <p>Langsung saja kita buat struktur folder sesuai gambar. pertama kita akan buat 3 buah direktori dengan nama style,script dan html untuk membuat direktori gunakan perintah <span>mkdir namaDirektori</span>
+            </p>
+            <img src="images/image-12.png" alt="#" class="responsive">
+            <p>karena sebelumnya kita sudah buat file dengan nama index.html maka kita pindahkan file tersebut ke dalam direktori html dengan perintah <span>mv file namaDirektori</span>
+            </p>
+            <img src="images/image-13.png" alt="#" class="responsive">
+            <p>nah setelah itu bagaimana caranya kita berpindah dari direktori html ke direktori induk yaitu frontend?</p>
+            <img src="images/image-14.png" alt="#" class="responsive">
+            <p>Gunakan perintah <span>cd..</span></p>
+            <img src="images/image-15.png" alt="#" class="responsive">
+            <p>dan Anda telah berhasil berpindah ke direktori induk dan untuk memastikan seperti biasa <span>pwd</span> dulu hehe</p>
+        </section>
+        <!-- Direktori Induk END -->
+        <!-- Mengubah nama file dan direktori -->
+        <section class="section" id="endpoints--ubah-nama">
+            <h1>Mengubah Nama FIle dan Direktori</h1>
+            <p>Untuk mengubah nama file dan direktori kita dapat gunakan perintah
+                <span>mv nama_file_lama nama_file_baru</span> dan untuk mengubah nama direktori caranya pun sama yakni <span>mv nama_direktori_lama nama_direktori_baru</span>
+            </p>
+            <img src="images/image-16.png" alt="#" class="responsive">
+            <p>Nah untuk direktori sama aja silahkan di coba sendiri ya hehe</p>
+        </section>
+        <!-- END -->
+        <!-- Menghapus file -->
+        <section class="section" id="endpoints--hapus">
+            <h1>Menghapus File dan Direktori</h1>
+            <p>Sampai juga di akhir Petualangan kita yang begitu panjang di sini kita akan mempelajari bagaimana menghapus file dan direktori? untuk menghapus file atau direktori di desa Terminal ini kita dapat gunakan perintah. <span>rm namafile</span>                untuk menghapus file sedangkan untuk menghapus direktori gunakan <span>rm -r namaDirektori</span>
+            </p>
+            <img src="images/image-17.png" alt="#" class="responsive">
+            <img src="images/image-18.png" alt="#" class="responsive">
+            <p>Sampai jumpa di Petualangan berikutnya!! jika tulisan ini bermanfaat jangan lupa share ke teman - teman yang lain agar bisa belajar juga, terima kasih wassalamualaikum wr wb
+            </p>
+        </section>
+        <!-- END -->
+        <!-- Footer -->
+        <section class="footer">
+            &copy; Copyright 2021 <a href="https://github.com/bahrul-rozak" target="_blank">Bahrul Rozak</a>
+        </section>
+    </main>
+    <a href="#" class="float" target="_blank">
+        <i class="fa fa-question my-float"></i>
+    </a>
+    <!-- <script src="script/main.js"></script> -->
+    <script src="text/javascript">
+        let button = document.getElementById('button-menu');
+        let main = document.getElementById('main');
+        button.addEventListener("click", e => {
+            button.classList.toggle("active");
+            main.classList.toggle("active");
+        })
+    </script>
+</body>
+
+</html>

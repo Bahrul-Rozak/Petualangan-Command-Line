@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+    scroll-behavior: smooth;
+}
+
+body {
+    --width: 200px;
+    background-color: orange;
+    overflow: hidden;
+}
+
+.container-menu {
+    background-color: none;
+    width: var(--width);
+    height: 100vh;
+    padding-left: 15px;
+}
+
+.container-menu h2 {
+    color: #fff;
+    padding: 20px 0px;
+}
+
+.list-items {
+    list-style: none;
+}
+
+.list-items a {
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 60px;
+}
+
+.list-items a:hover {
+    border: 1px solid #fff;
+    color: #fff;
+    transform: scale(0.8);
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+}
+
+main {
+    position: absolute;
+    width: calc(100% - var(--width));
+    height: 100vh;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background: #fff;
+    transition: all 0.8s;
+}
+
+main .active {
+    left: var(--width);
+}
+
+.section {
+    padding: 25px;
+    padding-bottom: auto;
+    text-align: justify;
+    margin-right: 1rem;
+}
+
+.section h1 {
+    margin: 20px 0px;
+}
+
+.button-menu {
+    --xy: 25px;
+    position: fixed;
+    top: var(--xy);
+    right: var(--xy);
+    display: none;
+    justify-content: center;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+}
+
+.button-menu .active {
+    color: #fff;
+}
+
+.footer {
+    bottom: 0;
+    text-align: center;
+    padding-bottom: 20px;
+    justify-content: center;
+    font-style: italic;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+span {
+    background-color: orange;
+}
+
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 20px;
+    background-color: orange;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.my-float {
+    margin-top: 16px;
+}
+
+
+/* Responsive */
+
+@media(max-width:600px) {
+    body {
+        --width: 100%;
+    }
+    .button-menu {
+        display: flex;
+    }
+    main {
+        width: 100%;
+    }
+    .responsive {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+}
+
+@media (min-width:600px) {
+    main {
+        left: var(--width);
+    }
+}
